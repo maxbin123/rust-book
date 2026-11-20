@@ -1,0 +1,10 @@
+[book]
+title = "Rust for Laravel, PHP, and JavaScript Developers"
+description = "An accelerated Rust 2024 book for experienced application developers."
+language = "en"
+
+[rust]
+edition = "2024"
+
+[output.html]
+git-repository-url = "https://github.com/maxbin123/rust-book"

@@ -1,10 +1,44 @@
-# The Rust Programming Language
+# Rust for Laravel, PHP, and JavaScript Developers
+
+This edition starts with ownership, modeling valid states, and deciding what
+failures a caller needs to handle. It assumes you already ship applications.
+One short Cargo and syntax chapter replaces the introductory programming tour.
+
+**[Start reading](php-laravel-js/src/start.md)** ·
+[All chapters](php-laravel-js/src/SUMMARY.md) ·
+[Job audit project](php-laravel-js/job-audit)
+
+The examples draw on PHP DTOs, Laravel jobs and service contracts, and
+JavaScript collection methods and promises. The capstone is a Rust CLI that
+validates a job export and reports counts. It runs on stable Rust 1.90 or newer
+and uses the standard library.
+
+```sh
+cargo +stable run --manifest-path php-laravel-js/job-audit/Cargo.toml -- php-laravel-js/job-audit/sample.jobs
+```
+
+You can read the chapters directly on GitHub or use [mdBook 0.5][mdbook-guide]
+for a searchable local edition.
+
+```sh
+mdbook serve php-laravel-js --open
+```
+
+[mdbook-guide]: https://rust-lang.github.io/mdBook/
+
+The chapter sequence draws on *The Rust Programming Language* by Steve Klabnik,
+Carol Nichols, and the Rust community, and on the Cognitive Engineering Lab's
+experimental edition. The original edition's build instructions follow.
+
+## The Rust Programming Language (Experimental Edition)
 
 ![Build Status](https://github.com/rust-lang/book/workflows/CI/badge.svg)
 
-This repository contains the source of "The Rust Programming Language" book, specifically an experimental branch that supports interactive features like quizzes.
+The original experimental edition of *The Rust Programming Language* supports
+interactive features such as quizzes.
 
-**If you discovered an issue in at <https://rust-book.cs.brown.edu/>, PLEASE report the issue on THIS REPOSITORY and not elsewhere.**
+For issues with the [Brown-hosted edition](https://rust-book.cs.brown.edu/), see
+the [Cognitive Engineering Lab's issue tracker](https://github.com/cognitive-engineering-lab/rust-book/issues).
 
 [The book is available in dead-tree form from No Starch Press][nostarch].
 

@@ -127,7 +127,7 @@ jobs:
       run: mdbook build
 
     - name: Deploy to Github Pages
-      if: ${{ github.ref == 'refs/heads/main' }}
+      if: ${{ github.repository == 'cognitive-engineering-lab/rust-book' && github.ref == 'refs/heads/main' }}
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
